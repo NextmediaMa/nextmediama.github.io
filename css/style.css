@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap');
 @import url('./css/reset.css');
+
 /*base and utulities*/
 body {
-  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
   color: rgb(32, 34, 35);
   background-color: #f6f6f7
 }
@@ -29,14 +30,15 @@ p {
   max-width: 58rem;
   margin: auto;
 }
+
 /*end base*/
 
 /* icon fonts*/
 
 @font-face {
   font-family: 'yc-status';
-  src:  url('./fonts/icomoon.eot?pbs1hash');
-  src:  url('./fonts/icomoon.eot?pbs1hash#iefix') format('embedded-opentype'),
+  src: url('./fonts/icomoon.eot?pbs1hash');
+  src: url('./fonts/icomoon.eot?pbs1hash#iefix') format('embedded-opentype'),
     url('./fonts/icomoon.ttf?pbs1hash') format('truetype'),
     url('./fonts/icomoon.woff?pbs1hash') format('woff'),
     url('./fonts/icomoon.svg?pbs1hash#yc') format('svg');
@@ -53,18 +55,23 @@ i.yc-status {
 .yc-status.yc-status-degraded:before {
   content: '\e900';
 }
+
 .yc-status.yc-status-maintenence:before {
   content: '\e901';
 }
+
 .yc-status.yc-status-no-issues:before {
   content: '\e902';
 }
+
 .yc-status.yc-status-outage:before {
   content: '\e903';
 }
+
 .yc-status.yc-status-partial-outage:before {
   content: '\e904';
 }
+
 /**/
 
 .youcan-status {
@@ -72,7 +79,7 @@ i.yc-status {
   padding-bottom: 2rem;
 }
 
-.youcan-status h1{
+.youcan-status h1 {
   font-size: 27px;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -92,7 +99,7 @@ i.yc-status {
   flex-wrap: wrap;
 }
 
-.youcan-status-list svg{
+.youcan-status-list svg {
   width: 20px;
   height: 20px;
   padding-right: .25rem;
@@ -134,15 +141,17 @@ i.yc-status {
   color: #6d7175;
   font-weight: bold;
 }
+
 .youcan-status-areas svg {
   width: 20px;
   height: 20px;
 }
 
-.youcan-service-areas{
+.youcan-service-areas {
   display: flex;
   flex-wrap: wrap;
 }
+
 .youcan-service-areas .youcan-service-area {
   flex-basis: 100%;
   display: flex;
@@ -190,24 +199,27 @@ i.yc-status {
   .youcan-service-areas .youcan-service-area {
     flex-basis: 50%;
   }
+
   .youcan-service-areas .youcan-service-area:nth-last-child(-n+2) {
     border-bottom: 0px solid #c4cdd5;
   }
+
   .youcan-status-areas {
     max-width: 58rem;
     margin: auto auto 1.25rem;
   }
+
   .youcan-status h1 {
     font-size: 2.625rem;
   }
 }
 
 .last-incident-date {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    line-height: 35px;
-    font-size: 28px;
-    font-weight: 500;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  line-height: 35px;
+  font-size: 28px;
+  font-weight: 500;
 }
 
 .note {
@@ -216,11 +228,12 @@ i.yc-status {
   border-left: 2px solid #E8E8E8;
   position: relative;
 }
+
 .note:not(:last-child) {
   padding-bottom: 32px;
 }
 
-.note > .outer_circle {
+.note>.outer_circle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -231,7 +244,7 @@ i.yc-status {
   background-color: white;
 }
 
-.note > .circle {
+.note>.circle {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -259,17 +272,19 @@ i.yc-status {
   display: flex;
   flex-direction: row;
 }
-.incident-row .left{
+
+.incident-row .left {
   padding-right: 72px;
 }
-.incident-row .right p{
+
+.incident-row .right p {
   white-space: nowrap;
 }
 
-.incident-row .right > div {
+.incident-row .right>div {
   line-height: 1.5;
 }
 
-.incident-row .right > div:first-child{
+.incident-row .right>div:first-child {
   margin-bottom: 32px;
 }
