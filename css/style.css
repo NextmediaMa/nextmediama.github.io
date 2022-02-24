@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,500&display=swap');
+@import url('./css/reset.css');
+/*base and utulities*/
+body {
+  font-family: -apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;
+  color: rgb(32, 34, 35);
+  background-color: #f6f6f7
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.container {
+  padding: 1rem;
+  padding-bottom: 90px;
+  max-width: 58rem;
+  margin: auto;
+}
+/*end base*/
+
+/* icon fonts*/
+
+@font-face {
+  font-family: 'yc-status';
+  src:  url('./fonts/icomoon.eot?pbs1hash');
+  src:  url('./fonts/icomoon.eot?pbs1hash#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?pbs1hash') format('truetype'),
+    url('./fonts/icomoon.woff?pbs1hash') format('woff'),
+    url('./fonts/icomoon.svg?pbs1hash#yc') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i.yc-status {
+  font-style: normal;
+  font-family: 'yc-status';
+}
+
+.yc-status.yc-status-degraded:before {
+  content: '\e900';
+}
+.yc-status.yc-status-maintenence:before {
+  content: '\e901';
+}
+.yc-status.yc-status-no-issues:before {
+  content: '\e902';
+}
+.yc-status.yc-status-outage:before {
+  content: '\e903';
+}
+.yc-status.yc-status-partial-outage:before {
+  content: '\e904';
+}
+/**/
+
+.youcan-status {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.youcan-status h1{
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.youcan-status svg {
+  margin: auto auto .5rem;
+  max-width: 7.5rem;
+  fill: #108043;
+}
+
+.youcan-status-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 1.25rem;
+  flex-wrap: wrap;
+}
+
+.youcan-status-list svg{
+  width: 20px;
+  height: 20px;
+  padding-right: .25rem;
+}
+
+.youcan-status-list .youcan-status-list-item {
+  font-size: .8125rem;
+  display: flex;
+  align-items: center;
+  color: #637381;
+}
+
+.youcan-status-list .youcan-status-list-item:not(:first-child) {
+  padding: .25rem 0 .25rem 1.25rem;
+}
+
+.youcan-status-areas {
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  padding: .5rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+}
+
+.youcan-status-areas header {
+  border-bottom: 1px solid #c4cdd5;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: #6d7175;
+  font-weight: bold;
+}
+
+.youcan-status-areas header {
+  border-bottom: 1px solid #c4cdd5;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: .75rem;
+  color: #6d7175;
+  font-weight: bold;
+}
+.youcan-status-areas svg {
+  width: 20px;
+  height: 20px;
+}
+
+.youcan-service-areas{
+  display: flex;
+  flex-wrap: wrap;
+}
+.youcan-service-areas .youcan-service-area {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.youcan-service-areas .youcan-service-area:not(:last-child) {
+  border-bottom: 1px solid #c4cdd5;
+}
+
+.youcan-service-areas .youcan-service-area .service {
+  padding: .8rem;
+  flex-grow: 1;
+}
+
+.youcan-service-areas .youcan-service-area .service span:first-child {
+  font-size: 1rem;
+  display: block;
+  font-weight: 500;
+  padding-bottom: .25rem;
+  color: #000;
+}
+
+.youcan-service-areas .youcan-service-area .service span:last-child {
+  color: #637381;
+  font-size: .875rem;
+  line-height: 1rem;
+}
+
+.youcan-service-areas .youcan-service-area .status-svg {
+  margin-top: .8rem;
+}
+
+.youcan-service-areas .youcan-service-area .service span {
+  display: block;
+}
+
+.incident {
+  text-align: center;
+  margin: auto auto 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .youcan-service-areas .youcan-service-area {
+    flex-basis: 50%;
+  }
+  .youcan-service-areas .youcan-service-area:nth-last-child(-n+2) {
+    border-bottom: 0px solid #c4cdd5;
+  }
+  .youcan-status-areas {
+    max-width: 58rem;
+    margin: auto auto 1.25rem;
+  }
+  .youcan-status h1 {
+    font-size: 2.625rem;
+  }
+}
+
+.last-incident-date {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    line-height: 35px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.note {
+  padding-left: 28px;
+  margin-left: 12px;
+  border-left: 2px solid #E8E8E8;
+  position: relative;
+}
+.note:not(:last-child) {
+  padding-bottom: 32px;
+}
+
+.note > .outer_circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #E8E8E8;
+  position: absolute;
+  left: -14px;
+  z-index: 3;
+  background-color: white;
+}
+
+.note > .circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #E8E8E8;
+  position: absolute;
+  left: -5px;
+  top: 9px;
+  z-index: 5;
+}
+
+.note p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #414141;
+}
+
+.note p .timezone {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.incident-row {
+  display: flex;
+  flex-direction: row;
+}
+.incident-row .left{
+  padding-right: 72px;
+}
+.incident-row .right p{
+  white-space: nowrap;
+}
+
+.incident-row .right > div {
+  line-height: 1.5;
+}
+
+.incident-row .right > div:first-child{
+  margin-bottom: 32px;
+}
