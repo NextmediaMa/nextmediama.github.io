@@ -214,6 +214,15 @@ i.yc-status {
   }
 }
 
+.incident-history {
+  text-decoration: underline;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  line-height: 35px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
 .last-incident-date {
   padding-top: 32px;
   padding-bottom: 32px;
