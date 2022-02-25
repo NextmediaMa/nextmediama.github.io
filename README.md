@@ -9,6 +9,26 @@ To add new incident you can add the following markup to the top :
   </p>
 </div>
 ```
+Incident with nested timezones
+```html
+<div class="note">
+  <h3 class="last-incident-date">Tuesday February 22, 2022</h3>
+  <p>
+    Issue mitigated, system is functional.
+    <span class="timezone">Feb 22, 3:48:00 PM GMT+1</span>
+  </p>
+  <br>
+  <p>
+    Issue identified and team is pushing a hot fix.
+    <span class="timezone">Feb 22, 3:43:00 PM GMT+1</span>
+  </p>
+  <br>
+  <p>
+    We noticed DB availability issue. Our teams are aware and an investigation is underway.
+    <span class="timezone">Feb 22, 3:24:24 PM GMT+1</span>
+  </p>
+</div>
+```
 
 **List of icons for each state :**
 
